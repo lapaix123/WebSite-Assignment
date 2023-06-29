@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>It Modern - About Us</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="../custom-scripts.js" defer></script>
+    <style>
+        /* style.css */
+
+/* About Section */
+.about {
+  padding: 80px 0;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.about_content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.about_img {
+  width: 300px;
+  margin-right: 40px;
+}
+
+.about_img img {
+  width: 100%;
+  height: auto;
+}
+
+.about_text {
+  max-width: 600px;
+  text-align: left;
+}
+
+.about_text p {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+/* Active Navigation Link */
+.nav_link.active {
+  font-weight: bold;
+  color: #333;
+}
+
+    </style>
+</head>
+
+<body>
+    <main>
+        <!-- Header Start -->
+        <header style="background-color: blueviolet;">
+            <nav class="nav container">
+                <h2 class="nav_logo"><a href="#">It Modern</a></h2>
+
+                <ul class="menu_items">
+                    <img src="images/times.svg" alt="timesicon" id="menu_toggle" />
+                    <li><a href="index.html" class="nav_link">Home</a></li>
+                    <li><a href="product.html" class="nav_link">Product</a></li>
+                    <li><a href="about.html" class="nav_link active">About</a></li>
+                    <li><a href="service.html" class="nav_link">Service</a></li>
+                    <li><a href="contact.html" class="nav_link">Contact</a></li>
+                </ul>
+                <img src="images/bars.svg" alt="timesicon" id="menu_toggle" />
+            </nav>
+        </header>
+        <!-- Header End -->
+
+        <!-- About Start -->
+        <section class="about">
+            <div class="container">
+                <h2>About Us</h2>
+                <div class="about_content">
+                    <div class="about_img">
+                        <img src="images/service.jpg" alt="About Image" />
+                    </div>
+                    <div class="about_text">
+                        <p>Welcome to It Modern, your one-stop destination for modern electronic devices. We are
+                            dedicated to providing the latest and high-quality IT products to our customers.</p>
+                        <p>At It Modern, we believe in the power of technology to enhance and simplify our lives. Our
+                            mission is to make our generation tech-savvy by offering a wide range of smart electronics
+                            devices.</p>
+                        <p>With a team of knowledgeable experts and a curated selection of products, we aim to assist
+                            our customers in finding the perfect device that meets their needs. Whether you're a
+                            student, professional, or tech enthusiast, we have the right solution for you.</p>
+                        <p>Quality and customer satisfaction are our top priorities. We ensure that all our products are
+                            genuine and undergo rigorous testing for optimal performance. We also strive to provide
+                            excellent customer service and support throughout your journey with us.</p>
+                        <p>Thank you for choosing It Modern. Explore our website and discover the best IT devices to
+                            keep you connected, productive, and ahead in the digital world.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- About End -->
+    </main>
+
+    <script>
+        const header = document.querySelector("header");
+        const menuToggler = document.querySelectorAll("#menu_toggle");
+
+        menuToggler.forEach(toggler => {
+            toggler.addEventListener("click", () => header.classList.toggle("showMenu"));
+        });
+    </script>
+</body>
+
+</html>

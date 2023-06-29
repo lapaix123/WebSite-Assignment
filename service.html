@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>It Modern - Services</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="../custom-scripts.js" defer></script>
+    <style>
+        /* style.css */
+
+/* Service Section */
+.service {
+  padding: 80px 0;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+.service h2 {
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.service p {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 60px;
+}
+
+.service_items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.service_item {
+  width: 300px;
+  padding: 20px;
+  background-color: #fff;
+  margin: 20px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.service_img {
+  width: 100%;
+  height: 150px;
+  margin-bottom: 20px;
+}
+
+.service_item h3 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.service_item p {
+  font-size: 16px;
+  color: #666;
+}
+
+/* Active Navigation Link */
+.nav_link.active {
+  font-weight: bold;
+  color: #333;
+}
+p{
+    color: black;
+}
+    </style>
+</head>
+
+<body>
+    <main>
+        <!-- Header Start -->
+        <header style="background-color:blueviolet;">
+            <nav class="nav container">
+                <h2 class="nav_logo"><a href="#">It Modern</a></h2>
+
+                <ul class="menu_items">
+                    <img src="images/times.svg" alt="timesicon" id="menu_toggle" />
+                    <li><a href="index.html" class="nav_link">Home</a></li>
+                    <li><a href="product.html" class="nav_link">Product</a></li>
+                    <li><a href="about.html" class="nav_link">About</a></li>
+                    <li><a href="service.html" class="nav_link active">Service</a></li>
+                    <li><a href="contact.html" class="nav_link">Contact</a></li>
+                </ul>
+                <img src="images/bars.svg" alt="timesicon" id="menu_toggle" />
+            </nav>
+        </header>
+        <!-- Header End -->
+
+        <!-- Service Start -->
+        <section class="service">
+            <div class="container">
+                <h2>Our Services</h2>
+                <p style="color: black;">We specialize in providing high-quality electronic devices for your IT needs.</p>
+                <div class="service_items">
+                    <div class="service_item">
+                        <img src="images/service1.png" alt="Service 1" class="service_img" />
+                        <h3>Wide Range of Products</h3>
+                        <p style="color: black;">Explore our extensive collection of electronic devices, including laptops, desktops,
+                            smartphones, and more. We offer the latest models from top brands.</p>
+                    </div>
+                    <div class="service_item">
+                        <img src="images/service2.png" alt="Service 2" class="service_img" />
+                        <h3>Expert Advice</h3>
+                        <p style="color: black;">Our team of knowledgeable experts is available to provide you with personalized
+                            recommendations and assist you in finding the perfect device that meets your requirements.
+                        </p>
+                    </div>
+                    <div class="service_item">
+                        <img src="images/service3.png" alt="Service 3" class="service_img" />
+                        <h3>Quality Assurance</h3>
+                        <p style="color: black;">We guarantee the authenticity and quality of all our products. Each device undergoes thorough
+                            testing to ensure optimal performance and customer satisfaction.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Service End -->
+    </main>
+
+    <script>
+        const header = document.querySelector("header");
+        const menuToggler = document.querySelectorAll("#menu_toggle");
+
+        menuToggler.forEach(toggler => {
+            toggler.addEventListener("click", () => header.classList.toggle("showMenu"));
+        });
+    </script>
+</body>
+
+</html>

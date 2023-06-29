@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>It Modern</title>
+    <link rel="stylesheet" href="style.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="../custom-scripts.js" defer></script>
+<style>
+    
+    h6{
+        font-size: 26px;
+        text-align: center;
+        color: #222f3e;
+        margin: 0;
+    }
+    ul{
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 0;
+    }
+    li{
+        padding-top: 5px;
+    }
+    .fa{
+        font-size: 26px;
+        transition: .4s;
+        margin: 3px;
+    }
+    .checked{
+        color: #ff9f43;
+    }
+    .fa.hover{
+        transform: scale(1.3);
+        transition: .6s;
+    }
+    button{
+        text-align: center;
+        font-size: 24px;
+        color: #fff;
+        width: 100%;
+        padding: 15px;
+        border: 0;
+        outline: none;
+        cursor: pointer;
+        margin-top: 5px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+    .buy-1{
+        background: #2183a2;
+    }
+    .buy-2{
+        background: #3b3e6e;
+    }
+    .buy-3{
+        background: #0b0b0b;
+    }
+    .buy-4{
+        background: #ff9f43;
+    }
+    .buy-5{
+        background: #3b3e6e;
+    }
+    @media(max-width:1000px){
+        .contntP{
+            width: 45%;
+        }
+    }
+    @media(max-width:750px){
+        .contntP{
+            width: 100%;
+        }
+    }
+    p{
+        text-align: center;
+      color:#07681c;
+        padding-top: 0 8px;
+    }
+</style>
+</head>
+
+<body>
+    <main>
+        <!-- Header Start -->
+        <header>
+            <nav class="nav container">
+                <h2 class="nav_logo"><a href="#">It Modern</a></h2>
+
+                <ul class="menu_items">
+                    <img src="images/times.svg" alt="timesicon" id="menu_toggle" />
+                    <li><a href="index.html" class="nav_link">Home</a></li>
+                    <li><a href="product.html" class="nav_link">Product</a></li>
+                    <li><a href="about.html" class="nav_link">About</a></li>
+                    <li><a href="service.html" class="nav_link">Service</a></li>
+                    <li><a href="contact.html" class="nav_link">Contact</a></li>
+                </ul>
+                <img src="images/bars.svg" alt="timesicon" id="menu_toggle" />
+            </nav>
+        </header>
+        <!-- Header End -->
+
+        <!-- Hero Start -->
+        <section class="hero">
+            <div class="row container">
+            <div class="gallery">
+             <div class="contentP">
+                
+                <img src="img/desktop.jpeg" style="width: 200px; height: 200px; text-align: center; margin: auto;display: block;">
+                <h3>DeskTop</h3>
+                <p style="color: #07681c;">Gaming DeskTop RAM= 16, HDD= 500,PROCESSOR =3.16GHZ</p>
+                <h6>$700.00</h6>
+                <ul>
+                    <li ><i class="fa fa-star checked"></i></li>
+                    <li><i class="fa fa-star checked"></i></li>
+                    <li><i class="fa fa-star checked"></i></li>
+                    <li><i class="fa fa-star checked"></i></li>
+                    <li><i class="fa fa-star "></i></li>
+                </ul>
+                <button class="buy-2">Buy now</button>
+             </div>
+              
+            <div class="contentP">
+                
+                <img src="img/hp-laptop.jpeg" style="width: 200px; height: 200px; text-align: center; margin: auto;display: block;">
+                <h3>hp DeskTop</h3>
+                <p style="color: #07681c;">Gaming laptop RAM= 8, HDD= 500,PROCESSOR =3.16GHZ</p>
+                <h6>$500.00</h6>
+                <ul>
+                    <li><i class="fa fa-star checked"></i></li>
+                    <li><i class="fa fa-star checked"></i></li>
+                    <li><i class="fa fa-star checked"></i></li>
+                    <li><i class="fa fa-star checked"></i></li>
+                    <li><i class="fa fa-star "></i></li>
+                </ul>
+                <button class="buy-1">Buy now</button>
+            </div>
+            <div class="contentP">
+                
+                <img src="img/laptop-mac.jpeg" style="width: 200px; height: 200px; text-align: center; margin: auto;display: block;">
+                <h3>Mack book</h3>
+                <p style="color: #07681c;">laptop RAM= 4, HDD= 500,PROCESSOR =3.16GHZ</p>
+                <h6>$900.00</h6>
+                <ul>
+                    <li><i class="fa fa-star checked"></i></li>
+                    <li><i class="fa fa-star checked"></i></li>
+                    <li><i class="fa fa-star checked"></i></li>
+                    <li><i class="fa fa-star checked"></i></li>
+                    <li><i class="fa fa-star "></i></li>
+                </ul>
+                <button class="buy-2">Buy now</button>
+            </div>
+            <div class="contentP">
+                
+                <img src="img/adpter-cables.jpeg" style="width: 200px; height: 200px; text-align: center; margin: auto;display: block;">
+                <h3>Adpter</h3>
+                <p style="color: #07681c;">Laptop Adpter 10</p>
+                
+                <h6>$700.00</h6>
+                <ul>
+                    <li><i class="fa fa-star checked"></i></li>
+                    <li><i class="fa fa-star checked"></i></li>
+                    <li><i class="fa fa-star checked"></i></li>
+                    <li><i class="fa fa-star checked"></i></li>
+                    <li><i class="fa fa-star "></i></li>
+                </ul>
+                <button class="buy-3">Buy now</button>
+            </div>
+            <div class="contentP">
+                <h3>DeskTop</h3>
+                <img src="img/desktop.jpeg" style="width: 200px; height: 200px; text-align: center; margin: auto;display: block;">
+                <p style="color: #07681c;">Gaming laptop RAM= 16, HDD= 500,PROCESSOR =3.16GHZ</p>
+                <h6>$700.00</h6>
+                <ul>
+                    <li><i class="fa fa-star checked"></i></li>
+                    <li><i class="fa fa-star checked"></i></li>
+                    <li><i class="fa fa-star checked"></i></li>
+                    <li><i class="fa fa-star checked"></i></li>
+                    <li><i class="fa fa-star "></i></li>
+                </ul>
+                <button class="buy-4">Buy now</button>
+            </div>
+            
+           </div>
+    </div>
+        </section>
+        <!-- Hero End-->
+    </main>
+
+    <script>
+        const header = document.querySelector("header");
+        const menuToggler = document.querySelectorAll("#menu_toggle");
+
+        menuToggler.forEach(toggler => {
+            toggler.addEventListener("click", () => header.classList.toggle("showMenu"));
+        });
+    </script>
+</body>
+
+</html>
