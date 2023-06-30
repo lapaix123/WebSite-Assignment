@@ -275,3 +275,43 @@ h3{
 
 }
 
+
+/* Footer Section */
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 40px 0;
+}
+
+.footer_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer_social h3,
+.footer_info h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.social_icons {
+  display: flex;
+}
+
+.social_icons a {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.social_icons img {
+  width: 24px;
+  height: 24px;
+}
+
+.footer_info p {
+  margin-bottom: 10px;
+}
+
+.footer_bottom
+
